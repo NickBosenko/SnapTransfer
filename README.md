@@ -38,8 +38,9 @@ The `.exe` file is fully portable and includes all necessary files inside. Simpl
 ## 🖼 Preview
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/NickBosenko/SnapTransfer/main/screenshots/interface.png" width="600"/>
+  <img src="https://raw.githubusercontent.com/NickBosenko/SnapTransfer/main/interface.png" width="600"/>
 </p>
+
 
 
 ## 📄 License
