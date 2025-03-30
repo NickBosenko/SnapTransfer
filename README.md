@@ -2,6 +2,11 @@
 
 **SnapTransfer** is a lightweight, standalone tool that lets you transfer photos between your phone and PC directly through a browser over Wi-Fi — no internet, no installation, no accounts.
 
+## 🔽 Download
+
+👉 [Click here to download SnapTransfer.exe](https://github.com/NickBosenko/SnapTransfer/releases/download/v1.0.0/SnapTransfer.exe)
+
+
 ## 🚀 Features
 
 - 📱 Transfer photos between phone and PC over local Wi-Fi
