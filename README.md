@@ -35,6 +35,13 @@ You can reopen the program later and continue working with the same files.
 
 The `.exe` file is fully portable and includes all necessary files inside. Simply unzip and run.
 
+## 🖼 Preview
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NickBosenko/SnapTransfer/main/screenshots/interface.png" width="600"/>
+</p>
+
+
 ## 📄 License
 
 This project is licensed under the MIT License.  
