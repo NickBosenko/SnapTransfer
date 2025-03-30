@@ -1,3 +1,10 @@
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/NickBosenko/SnapTransfer?label=Latest%20release)
+![GitHub All Releases](https://img.shields.io/github/downloads/NickBosenko/SnapTransfer/total?label=Downloads)
+![GitHub repo size](https://img.shields.io/github/repo-size/NickBosenko/SnapTransfer)
+![GitHub last commit](https://img.shields.io/github/last-commit/NickBosenko/SnapTransfer)
+![GitHub license](https://img.shields.io/github/license/NickBosenko/SnapTransfer)
+
+
 # 📸 SnapTransfer
 
 **SnapTransfer** is a lightweight, standalone tool that lets you transfer photos between your phone and PC directly through a browser over Wi-Fi — no internet, no installation, no accounts.
