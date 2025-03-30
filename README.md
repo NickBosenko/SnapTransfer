@@ -53,6 +53,14 @@ The `.exe` file is fully portable and includes all necessary files inside. Simpl
   <img src="https://raw.githubusercontent.com/NickBosenko/SnapTransfer/main/interface.png" width="600"/>
 </p>
 
+## ☕ Support the project
+
+If you find SnapTransfer useful, consider sharing it or starring the repo!
+
+You can also support the author:
+
+[![GitHub followers](https://img.shields.io/github/followers/NickBosenko?label=Follow%20on%20GitHub&style=social)](https://github.com/NickBosenko)
+[![GitHub stars](https://img.shields.io/github/stars/NickBosenko/SnapTransfer?style=social)](https://github.com/NickBosenko/SnapTransfer/stargazers)
 
 
 ## 📄 License
