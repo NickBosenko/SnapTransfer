@@ -7,16 +7,19 @@
 
 # 📸 SnapTransfer
 
-**SnapTransfer** is a lightweight, standalone tool that lets you transfer photos between your phone and PC directly through a browser over Wi-Fi — no internet, no installation, no accounts.
+**SnapTransfer** is a lightweight, standalone tool that lets you transfer files between your phone and PC directly through a browser over Wi-Fi — no internet, no installation, no accounts.
 
 ## 🔽 Download
 
-👉 [Click here to download SnapTransfer.exe](https://github.com/NickBosenko/SnapTransfer/releases/download/v1.0.0/SnapTransfer.exe)
+👉 [Click here to download SnapTransfer.exe](https://github.com/NickBosenko/SnapTransfer/releases/download/v1.1.0/SnapTransfer.exe)
 
 
 ## 🚀 Features
 
-- 📱 Transfer photos between phone and PC over local Wi-Fi
+- 📱 Transfer files between phone and PC over local Wi-Fi
+- 📂 Support for all file types — you can now upload not only photos, but any files (documents, music, videos, and more) (**NEW**)
+- 🗂 File sorting by type — files are automatically organized into categories (Photos, Videos, Music, Documents, Other) both in the browser window and in the `uploads/` folder (**NEW**)
+- 🕒 File upload history — each file is saved with its upload date, and the browser window displays a history of uploaded files by day (**NEW**)
 - 🔒 100% offline — no files are uploaded anywhere
 - 🌍 Multilingual interface: all EU languages + Russian, Chinese, Japanese, Korean
 - ⚡ Simple drag-and-drop or tap-to-upload interface
@@ -52,6 +55,10 @@ The `.exe` file is fully portable and includes all necessary files inside. Simpl
 <p align="center">
   <img src="https://raw.githubusercontent.com/NickBosenko/SnapTransfer/main/interface.png" width="600"/>
 </p>
+
+##🛠 Troubleshooting
+
+If the file upload page does not open in your browser for some reason, make sure that: 1 - You have disabled VPN. 2 - Your antivirus or firewall is not blocking the running .exe file.
 
 ## ☕ Support the project
 
