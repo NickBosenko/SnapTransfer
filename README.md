@@ -56,7 +56,7 @@ The `.exe` file is fully portable and includes all necessary files inside. Simpl
   <img src="https://raw.githubusercontent.com/NickBosenko/SnapTransfer/main/interface.png" width="600"/>
 </p>
 
-##🛠 Troubleshooting
+## 🛠 Troubleshooting
 
 If the file upload page does not open in your browser for some reason, make sure that: 1 - You have disabled VPN. 2 - Your antivirus or firewall is not blocking the running .exe file.
 
