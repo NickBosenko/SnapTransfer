@@ -34,12 +34,12 @@
 1. Download and extract the archive  
 2. Run `SnapTransfer.exe`  
 3. Your browser will open automatically with a local address (e.g. `http://192.168.0.36:8000`)  
-4. On your phone, connect to the **same Wi-Fi** and open the same address in Chrome or Safari  
-5. Upload or download photos easily between devices  
+4. On your phone / any other device, connect to the **same Wi-Fi** and open the same address in Chrome or Safari  
+5. Upload or download files easily between devices  
 
 ## 📁 Where are files stored?
 
-All uploaded files are saved in the `uploads/` folder created next to the `.exe` file.
+All uploaded files are saved in the `uploads/` folder created next to the `.exe` file on your pc.
 
 You can reopen the program later and continue working with the same files.
 
