@@ -10,7 +10,7 @@
 
 # SnapTransfer
 
-**SnapTransfer** is a lightweight, standalone tool that lets you transfer files between your phone and PC directly through a browser over Wi-Fi — no internet, no installation, no accounts.
+**SnapTransfer** is a lightweight, standalone tool that lets you transfer files between any smart device and PC directly through a browser over Wi-Fi — no internet, no installation, no accounts.
 
 ## 🔽 Download
 
@@ -18,7 +18,7 @@
 
 ## 🚀 Features
 
-- 📱 Transfer files between phone and PC over local Wi-Fi  
+- 📱 Transfer files between any device and PC over local Wi-Fi  
 - 📂 Support for all file types — you can now upload not only photos, but any files (documents, music, videos, and more) (**NEW**)  
 - 🗂 File sorting by type — files are automatically organized into categories (Photos, Videos, Music, Documents, Other) both in the browser window and in the `uploads/` folder (**NEW**)  
 - 🕒 File upload history — each file is saved with its upload date, and the browser window displays a history of uploaded files by day (**NEW**)
@@ -39,7 +39,7 @@
 
 ## 📁 Where are files stored?
 
-All uploaded photos are saved in the `uploads/` folder created next to the `.exe` file.
+All uploaded files are saved in the `uploads/` folder created next to the `.exe` file.
 
 You can reopen the program later and continue working with the same files.
 
