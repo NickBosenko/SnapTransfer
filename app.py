@@ -8,7 +8,7 @@ import socket
 import shutil
 from datetime import datetime
 import mimetypes
-import CGI
+import cgi
 from urllib.parse import unquote
 
 PORT = 8000
