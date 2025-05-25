@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const uploadStatus = document.getElementById('uploadStatus');
     const languageSelect = document.getElementById('language');
 
+    let currentViewMode = 'list-view'; // по умолчанию
+
     function getFileIcon(filename) {
         const ext = filename.split('.').pop().toLowerCase();
         const icons = {
@@ -160,6 +162,18 @@ document.addEventListener('DOMContentLoaded', function() {
         modal.appendChild(content);
     }
 
+    function setViewMode(mode) {
+        currentViewMode = mode;
+        document.querySelectorAll('.file-grid').forEach(grid => {
+            grid.className = 'file-grid';
+            grid.classList.add(mode);
+        });
+        // Обновить активные кнопки
+        document.querySelectorAll('.view-mode-btn').forEach(btn => btn.classList.remove('active'));
+        document.querySelectorAll('.view-mode-btn[data-mode="' + mode + '"]')
+            .forEach(btn => btn.classList.add('active'));
+    }
+
     function displayFiles(files) {
         filesContainer.innerHTML = '';
         
@@ -169,7 +183,38 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const dateHeader = document.createElement('div');
             dateHeader.className = 'date-header';
-            dateHeader.textContent = date.replace(/_/g, '-');
+            
+            const dateText = document.createElement('span');
+            dateText.textContent = date.replace(/_/g, '-');
+            dateHeader.appendChild(dateText);
+
+            // Add view mode buttons
+            const viewModes = document.createElement('div');
+            viewModes.className = 'view-modes';
+            
+            const listViewBtn = document.createElement('button');
+            listViewBtn.className = 'view-mode-btn';
+            listViewBtn.setAttribute('data-mode', 'list-view');
+            listViewBtn.innerHTML = '<i class="fas fa-list"></i>';
+            listViewBtn.title = 'Список';
+            
+            const smallIconsBtn = document.createElement('button');
+            smallIconsBtn.className = 'view-mode-btn';
+            smallIconsBtn.setAttribute('data-mode', 'small-icons-view');
+            smallIconsBtn.innerHTML = '<i class="fas fa-th"></i>';
+            smallIconsBtn.title = 'Мелкие значки';
+            
+            const largeIconsBtn = document.createElement('button');
+            largeIconsBtn.className = 'view-mode-btn';
+            largeIconsBtn.setAttribute('data-mode', 'large-icons-view');
+            largeIconsBtn.innerHTML = '<i class="fas fa-th-large"></i>';
+            largeIconsBtn.title = 'Крупные значки';
+
+            viewModes.appendChild(listViewBtn);
+            viewModes.appendChild(smallIconsBtn);
+            viewModes.appendChild(largeIconsBtn);
+            dateHeader.appendChild(viewModes);
+            
             dateSection.appendChild(dateHeader);
 
             for (const [category, fileList] of Object.entries(categories)) {
@@ -183,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     categorySection.appendChild(categoryHeader);
 
                     const fileGrid = document.createElement('div');
-                    fileGrid.className = 'file-grid';
+                    fileGrid.className = 'file-grid ' + currentViewMode;
 
                     fileList.forEach(file => {
                         fileGrid.appendChild(createFilePreview(file, date, category));
@@ -195,7 +240,15 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             filesContainer.appendChild(dateSection);
+
+            // Назначить обработчики после добавления в DOM
+            listViewBtn.onclick = () => setViewMode('list-view');
+            smallIconsBtn.onclick = () => setViewMode('small-icons-view');
+            largeIconsBtn.onclick = () => setViewMode('large-icons-view');
         }
+        // После отрисовки, выделить активную кнопку
+        document.querySelectorAll('.view-mode-btn[data-mode="' + currentViewMode + '"]')
+            .forEach(btn => btn.classList.add('active'));
     }
 
     function refreshFiles() {

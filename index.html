@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>SnapTransfer</title>
     <style>
         body {
@@ -64,6 +65,63 @@
             font-weight: bold;
             margin-bottom: 1em;
             color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .view-modes {
+            display: flex;
+            gap: 8px;
+        }
+
+        .view-mode-btn {
+            background: none;
+            border: none;
+            padding: 4px 8px;
+            cursor: pointer;
+            color: #666;
+            transition: color 0.2s;
+        }
+
+        .view-mode-btn:hover {
+            color: #000;
+        }
+
+        .view-mode-btn.active {
+            color: #000;
+        }
+
+        /* View mode styles */
+        .file-grid.list-view {
+            display: flex !important;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .file-grid.list-view .file-item {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+        }
+
+        .file-grid.list-view .file-preview,
+        .file-grid.list-view .file-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 12px;
+        }
+
+        .file-grid.small-icons-view {
+            display: grid !important;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        }
+
+        .file-grid.large-icons-view {
+            display: grid !important;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         }
 
         .category-section {
@@ -138,6 +196,42 @@
             height: 100%;
             background-color: #4CAF50;
             transition: width 0.3s ease;
+        }
+
+        .file-grid.small-icons-view .file-item,
+        .file-grid.large-icons-view .file-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0.5em;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            height: auto;
+        }
+
+        .file-grid.small-icons-view .file-preview,
+        .file-grid.small-icons-view .file-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0;
+        }
+
+        .file-grid.large-icons-view .file-preview,
+        .file-grid.large-icons-view .file-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0;
+        }
+
+        .file-grid.small-icons-view .file-name,
+        .file-grid.large-icons-view .file-name {
+            margin-top: 0.5em;
+            font-size: 0.9em;
+            text-align: center;
+            word-break: break-all;
         }
     </style>
 </head>
