@@ -8,7 +8,8 @@ import socket
 import shutil
 from datetime import datetime
 import mimetypes
-import cgi
+import CGI
+from urllib.parse import unquote
 
 PORT = 8000
 if getattr(sys, 'frozen', False):
@@ -75,6 +76,7 @@ local_ip = get_local_ip()
 
 class MyHandler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
+        self.path = unquote(self.path)
         if self.path == "/get-ip":
             self.send_response(200)
             self.send_header('Content-type', 'text/plain')
