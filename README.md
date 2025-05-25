@@ -14,14 +14,15 @@
 
 ## 🔽 Download
 
-👉 [Click here to download SnapTransfer.exe](https://github.com/NickBosenko/SnapTransfer/releases/download/v1.1.0/SnapTransfer.exe)
+👉 [Click here to download SnapTransfer.exe](https://github.com/NickBosenko/SnapTransfer/releases/download/v1.2.0/SnapTransfer.exe)
 
 ## 🚀 Features
 
 - 📱 Transfer files between phone and PC over local Wi-Fi  
 - 📂 Support for all file types — you can now upload not only photos, but any files (documents, music, videos, and more) (**NEW**)  
 - 🗂 File sorting by type — files are automatically organized into categories (Photos, Videos, Music, Documents, Other) both in the browser window and in the `uploads/` folder (**NEW**)  
-- 🕒 File upload history — each file is saved with its upload date, and the browser window displays a history of uploaded files by day (**NEW**)  
+- 🕒 File upload history — each file is saved with its upload date, and the browser window displays a history of uploaded files by day (**NEW**)
+- 🖼 Three display modes for uploaded files: List, Grid, and Table views (**NEW**) 
 - 🔒 100% offline — no files are uploaded anywhere  
 - 🌍 Multilingual interface: all EU languages + Russian, Chinese, Japanese, Korean  
 - ⚡ Simple drag-and-drop or tap-to-upload interface  
