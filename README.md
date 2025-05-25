@@ -5,7 +5,7 @@
 ![GitHub license](https://img.shields.io/github/license/NickBosenko/SnapTransfer)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/NickBosenko/SnapTransfer/main/favicon.png" width="80" alt="SnapTransfer Icon" />
+  <img src="https://raw.githubusercontent.com/NickBosenko/SnapTransfer/main/favicon.ico" width="80" alt="SnapTransfer Icon" />
 </p>
 
 # SnapTransfer
